@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Header extends Component {
+class Header extends PureComponent {
   render() {
+    console.log('header');
     return (
       <>
         <div className='navbar'>
           <span>Habit Trakcer</span>
-          <span className='navbar'>
-            {this.props.state.habits.filter((v) => v.count > 0).length}
-          </span>
+          <span className='navbar'>{this.props.totalCount}</span>
         </div>
       </>
     );

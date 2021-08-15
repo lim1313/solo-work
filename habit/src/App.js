@@ -15,20 +15,22 @@ class App extends Component {
   };
 
   increaseNum = (habit) => {
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    habits[index].count++;
+    const habits = this.state.habits.map((item) => {
+      if (item.id === habit.id) {
+        return { ...habit, count: habit.count + 1 };
+      }
+      return item;
+    });
     this.setState({ habits });
   };
 
   decreaseNum = (habit) => {
-    const habits = [...this.state.habits];
-    const index = habits.indexOf(habit);
-    if (habits[index].count === 0) {
-      habits[index].count = 0;
-    } else {
-      habits[index].count--;
-    }
+    const habits = this.state.habits.map((item) => {
+      if (item.id === habit.id) {
+        return { ...habit, count: habit.count > 0 ? habit.count - 1 : 0 };
+      }
+      return item;
+    });
     this.setState({ habits });
   };
 
@@ -50,9 +52,11 @@ class App extends Component {
   };
 
   resetAll = () => {
-    const habits = [...this.state.habits];
-    const resetNum = habits.map((v) => {
-      return { ...v, count: 0 };
+    const resetNum = this.state.habits.map((v) => {
+      if (v.count !== 0) {
+        return { ...v, count: 0 };
+      }
+      return v;
     });
     this.setState({ habits: resetNum });
   };
@@ -60,8 +64,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header state={this.state} />
-        <AddHabit state={this.state} addHabit={this.addHabit} />
+        <Header
+          totalCount={this.state.habits.filter((v) => v.count > 0).length}
+        />
+        <AddHabit addHabit={this.addHabit} />
         <Habits
           state={this.state}
           increase={this.increaseNum}

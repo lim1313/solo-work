@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class AddHabit extends Component {
+class AddHabit extends PureComponent {
   myRef = React.createRef();
   //formRef = React.createRef();
 
