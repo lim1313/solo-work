@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./dom.js" defer></script>
+    <link rel = "stylesheet" href="./dom.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+     <div id="wrapper">
+        <div id="greeting">twittler</div>
+        <section class="wrapUp">
+          <div>
+            <div class="userName title">userName</div>
+            <input id="writeBox1" type="text" placeholder="write your name!">
+          </div>
+          <div>
+            <div class="message title">Message</div>
+            <textarea id="writeBox2" placeholder="write your comment!"></textarea>
+          </div>
+          <input class = "passComfirm" type="text" placeholder="your password" />
+          <button id="addBtn">Tweet!</button>
+        </section>
+        <section class="wrapBottom">
+          <article>
+            <button id="refresh">check new tweets</button>
+          </article>
+          <ul class = "commentUL">
+          </ul>
+        </section>
+  </div>
+  </body>
+</html>
