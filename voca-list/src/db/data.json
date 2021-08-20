@@ -16,7 +16,7 @@
       "day": 1,
       "eng": "book",
       "kor": "책",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": 3,
@@ -35,6 +35,13 @@
     {
       "id": 5,
       "day": 3,
+      "eng": "pencil",
+      "kor": "연필",
+      "isDone": false
+    },
+    {
+      "id": 6,
+      "day": 1,
       "eng": "pencil",
       "kor": "연필",
       "isDone": false
