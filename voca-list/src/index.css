@@ -47,6 +47,7 @@ a {
   background-color: #efefef;
   font-weight: bold;
   border-radius: 4px;
+  color: black;
 }
 
 .list_day {
@@ -95,6 +96,15 @@ table td:first-child {
   margin-left: 10px;
   color: #fff;
   background-color: firebrick;
+}
+
+.del_day {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.del_day:hover {
+  cursor: pointer;
 }
 
 button {

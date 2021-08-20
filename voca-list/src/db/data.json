@@ -1,23 +1,19 @@
 {
   "days": [
-    { "id": 1, "day": 1 },
+    {
+      "id": 1,
+      "day": 1
+    },
     {
       "id": 2,
       "day": 2
     },
     {
-      "id": 3,
+      "id": 1629471692286,
       "day": 3
     }
   ],
   "words": [
-    {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": true
-    },
     {
       "id": 3,
       "day": 2,
@@ -26,24 +22,24 @@
       "isDone": false
     },
     {
-      "id": 4,
-      "day": 3,
-      "eng": "school",
-      "kor": "학교",
-      "isDone": false
-    },
-    {
-      "id": 5,
-      "day": 3,
-      "eng": "pencil",
-      "kor": "연필",
-      "isDone": false
-    },
-    {
       "id": 6,
       "day": 1,
       "eng": "pencil",
       "kor": "연필",
+      "isDone": true
+    },
+    {
+      "id": 1629468811462,
+      "day": "1",
+      "eng": "sf",
+      "kor": "sdf",
+      "isDone": false
+    },
+    {
+      "id": 1629471707236,
+      "day": "3",
+      "eng": "computer",
+      "kor": "컴컴",
       "isDone": false
     }
   ]

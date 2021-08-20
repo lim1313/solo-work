@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import CreateDay from './components/createDay';
+import CreateWord from './components/createWord';
 import Day from './components/day';
 import DayList from './components/dayList';
 import Emptypage from './components/emptypage';
@@ -16,6 +18,12 @@ function App() {
           </Route>
           <Route path='/day/:day'>
             <Day />
+          </Route>
+          <Route path='/create_word'>
+            <CreateWord />
+          </Route>
+          <Route path='/create_day'>
+            <CreateDay />
           </Route>
           <Route>
             <Emptypage />
