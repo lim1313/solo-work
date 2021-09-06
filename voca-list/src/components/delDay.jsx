@@ -19,8 +19,8 @@ const DelDay = ({ day: d }) => {
       });
 
       //! 다중 delete 어떻게 하는 거임??
-      // http://localhost:3001/words? day=${day.day}로 접근하여 delete하려고 했는데,
-      //해당 url은 배열을 보여준다. 배열의 경우 delete가 안되는 것 같은데,,,
+      // http://localhost:3001/words?day=${day.day}로 접근하여 delete하려고 했는데,
+      //해당 url은 배열을 보여준다. 배열의 경우 delete가 안되는 것인가??,,
       //하나 하나씩 삭제해주는 방법 밖에는 없는 것인가??
       fetch(`http://localhost:3001/words`)
         .then((res) => res.json())
@@ -37,6 +37,7 @@ const DelDay = ({ day: d }) => {
         });
     }
   };
+
   if (day.id === 0) {
     // return ' ';
     return null;
