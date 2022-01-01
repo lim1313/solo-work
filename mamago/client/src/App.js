@@ -17,7 +17,6 @@ function App() {
       )
         .then((res) => res.json())
         .then((data) => {
-          // console.log(data);
           setResultText(data.message.result.translatedText);
         });
     } else {
@@ -33,7 +32,7 @@ function App() {
   };
 
   return (
-    <>
+    <div style={{ padding: '2rem' }}>
       <h3>mini Mamago</h3>
       <Write
         changeText={changeText}
@@ -43,7 +42,7 @@ function App() {
       />
       <SubmitBtn transText={transText} />
       <ShowText resultText={resultText} changeLang={changeLang} lang={lang} />
-    </>
+    </div>
   );
 }
 
