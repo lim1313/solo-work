@@ -5,6 +5,9 @@
 - Naver Papago API 호출을 통해 번역기능을 도입
 - 요청과 응답에 대한 이해도 함양
 
+![mamago](https://user-images.githubusercontent.com/83012943/147855186-325c32e1-bda7-46e5-b231-4b3b73c2b688.gif)
+
+
 ### voca-list
 
 - React
