@@ -1,5 +1,6 @@
 ## mamago
 #### 📎 [mamago 블로깅](https://velog.io/@ellie12/MINI-Mamago)
+#### 📎 [mamago github](https://github.com/lim1313/solo-work/tree/master/mamago)
 
 #### 구현 목적
 - 클라이언트의 요청과 서버의 응답을 구현해 봄으로써 react와 express의 이해도 함양.
